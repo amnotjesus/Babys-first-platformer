@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://b4w28vwk5hgqi"]
+
+[ext_resource type="Script" path="res://node_2d.gd" id="1_6sgsc"]
+[ext_resource type="Texture2D" uid="uid://k5qq77gin2dk" path="res://Red_square.png" id="2_7uc68"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yono4"]
+
+[node name="Node2D" type="CharacterBody2D"]
+scale = Vector2(3, 3)
+script = ExtResource("1_6sgsc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_yono4")
+
+[node name="RedSquare" type="Sprite2D" parent="."]
+position = Vector2(1.10269e-06, -8.04663e-07)
+scale = Vector2(0.07, 0.07)
+texture = ExtResource("2_7uc68")
+
+[node name="Camera2D" type="Camera2D" parent="."]
